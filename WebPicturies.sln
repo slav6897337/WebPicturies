@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPicturies", "WebPicturies\WebPicturies.csproj", "{6F7B65D0-8EC8-4612-B858-DABC6CB16CA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPicturesLogic", "WebPicturesLogic\WebPicturesLogic.csproj", "{A7A921D3-C610-4449-A3FB-9A7A6807ACBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPictures.Logic", "WebPicturesLogic\WebPictures.Logic.csproj", "{A7A921D3-C610-4449-A3FB-9A7A6807ACBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

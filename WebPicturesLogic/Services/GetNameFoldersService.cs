@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using WebPicturesLogic.Interfaces;
+using WebPictures.Logic.Interfaces;
 
-namespace WebPicturesLogic.Services
+namespace WebPictures.Logic.Services
 {
     public class GetNameFoldersService : IGetNameFoldersService
     {

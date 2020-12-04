@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace WebPicturesLogic.Interfaces
+namespace WebPictures.Logic.Interfaces
 {
     public interface IGetNameFoldersService
     {

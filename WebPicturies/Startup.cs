@@ -9,8 +9,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebPicturesLogic.Interfaces;
-using WebPicturesLogic.Services;
+using WebPictures.Logic.Interfaces;
+using WebPictures.Logic.Services;
 
 namespace WebPicturies
 {
