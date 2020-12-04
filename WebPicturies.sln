@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPicturies", "WebPicturies\WebPicturies.csproj", "{6F7B65D0-8EC8-4612-B858-DABC6CB16CA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPicturesLogic", "WebPicturesLogic\WebPicturesLogic.csproj", "{A7A921D3-C610-4449-A3FB-9A7A6807ACBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F7B65D0-8EC8-4612-B858-DABC6CB16CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7B65D0-8EC8-4612-B858-DABC6CB16CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7B65D0-8EC8-4612-B858-DABC6CB16CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7B65D0-8EC8-4612-B858-DABC6CB16CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7A921D3-C610-4449-A3FB-9A7A6807ACBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A921D3-C610-4449-A3FB-9A7A6807ACBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A921D3-C610-4449-A3FB-9A7A6807ACBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A921D3-C610-4449-A3FB-9A7A6807ACBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E18D7897-718D-4067-9AE5-39E3D9D8C0B4}
+	EndGlobalSection
+EndGlobal
