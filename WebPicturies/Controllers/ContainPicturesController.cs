@@ -10,17 +10,12 @@ namespace WebPicturies.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class ContainPicturesController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<ContainPicturesController> _logger;
         private readonly IGetNameFoldersService _getNameFoldersService;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IGetNameFoldersService getNameFoldersService)
+        public ContainPicturesController(ILogger<ContainPicturesController> logger, IGetNameFoldersService getNameFoldersService)
         {
             _logger = logger;
             _getNameFoldersService = getNameFoldersService;
