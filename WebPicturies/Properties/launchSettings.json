@@ -20,7 +20,7 @@
     "WebPicturies": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "ContainPictures",
+      "launchUrl": "api/ContainPictures",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

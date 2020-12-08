@@ -9,7 +9,7 @@ using WebPictures.Logic.Interfaces;
 namespace WebPicturies.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ContainPicturesController : ControllerBase
     {
         private readonly ILogger<ContainPicturesController> _logger;
