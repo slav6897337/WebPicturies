@@ -1,24 +1,37 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Web.Helpers;
 using WebPictures.Logic.Interfaces;
 
 namespace WebPictures.Logic.Services
 {
     public class GetNameFoldersService : IGetNameFoldersService
     {
-        private readonly string directoryName = "Pictures";
-        public IEnumerable<string> GetNameFolders() => Directory.GetDirectories(directoryName);      
+        private readonly string directoryName = "ClientApp/src/Component/img/Pictures";
+        public string GetNameFolders()
+        {
+            var category = Directory.EnumerateDirectories(directoryName);
+            List<string> newCategory = new List<string>();
+            foreach (var item in category)
+            {
+                newCategory.Add( item.Replace("ClientApp/src/Component/img/Pictures\\", ""));
+            }
+            string result = JsonConvert.SerializeObject(newCategory);
+            return result;
+        }
 
-        public IEnumerable<string> GetPictures(string category, int count)
+        public string GetPictures(string category)
         {
             string adres = directoryName + "/" + category;
             var pictures = Directory.GetFiles(adres);
+            Random rnd = new Random();
+            int count = rnd.Next(0, pictures.Length);
 
             if (count < pictures.Length)
-            {
-                Random rnd = new Random();
+            {                
                 List<string> pictersLess = new List<string>();
                 while (count > 0)
                 {
@@ -31,10 +44,12 @@ namespace WebPictures.Logic.Services
                         count--;
                     }                    
                 }
-                return pictersLess;
+                string result = JsonConvert.SerializeObject(pictersLess);
+                return result;
             }
-           
-            return pictures;
+
+            string resultTwo = JsonConvert.SerializeObject(pictures);
+            return resultTwo;
         }
     }
 }

@@ -1,0 +1,25 @@
+.navMenu{
+    display: flex;
+    flex-wrap: wrap;  
+    width: 10px;
+    height: 40%;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.buttonCategory{
+    font: 150% serif;
+    width: 100px;
+    text-align: left;
+    background-color:rgba(34, 100, 57, 0.1);
+    margin: 3px;
+    border: none;
+}
+
+.buttonCategory:hover{
+    background-color:rgba(13, 99, 19, 0.7);
+}
+.buttonCategory:active{
+    
+    font: 160% serif;
+}

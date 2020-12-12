@@ -9,7 +9,7 @@ using WebPictures.Logic.Interfaces;
 namespace WebPicturies.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class ContainPicturesController : ControllerBase
     {
         private readonly ILogger<ContainPicturesController> _logger;
@@ -22,11 +22,10 @@ namespace WebPicturies.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<string> Get(string category, int count)
+        public string Get(string category)
         {
-            if (count != 0 && !string.IsNullOrEmpty(category))
-                return _getNameFoldersService.GetPictures(category, count);
-
+            if (!string.IsNullOrEmpty(category))
+                return _getNameFoldersService.GetPictures(category);
             return _getNameFoldersService.GetNameFolders();
         }
     }

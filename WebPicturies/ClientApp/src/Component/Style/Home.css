@@ -1,0 +1,16 @@
+.home{
+    
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+    margin: 3px;
+    grid-column: 2;
+    grid-row: 2;
+  
+    
+
+}
+
+.home h1{
+    margin: 3px;
+}

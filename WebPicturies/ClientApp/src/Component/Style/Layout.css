@@ -1,0 +1,19 @@
+.layout {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  margin: -8px;
+
+
+  font: 15px "Century Gothic", Futura, sans-serif;
+  background-image: url(./../img/Fon.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+  display: grid;
+  grid-template-columns: 100px auto; 
+  grid-template-rows: 40px auto; 
+  
+  
+  }
+  
