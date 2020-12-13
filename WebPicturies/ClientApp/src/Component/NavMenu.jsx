@@ -32,8 +32,12 @@ export class NavMenu extends Component {
     static RenderCategory(items) {
         return (
             <div>
-                {items.map(item => (
-                    <button className='buttonCategory' src=''>{item}</button>
+                {items.map(item => (                    
+                    <button className='buttonCategory'  onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href='http://localhost:5000/' + item;
+                        }}
+                        >{item}</button>
                 ))}
             </div>
         );

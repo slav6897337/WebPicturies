@@ -1,15 +1,17 @@
 import React from "react";
+import { DisplayPicture } from './DisplayPicture';
 
 export class Diwali extends React.Component {
 
   static displayName = Diwali.name;
   
   render() {
-   
+
     return (
-      <div className="Diwali">
-        <h1>Diwali</h1>
+      <div>
+        <DisplayPicture name="Diwali"></DisplayPicture>
       </div>
     );
   }
 }
+

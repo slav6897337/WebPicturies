@@ -5,8 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="my-app\" />
-    <Folder Include="Pictures\" />
+    <Compile Remove="my-app\**" />
+    <Compile Remove="Pictures\**" />
+    <Content Remove="my-app\**" />
+    <Content Remove="Pictures\**" />
+    <EmbeddedResource Remove="my-app\**" />
+    <EmbeddedResource Remove="Pictures\**" />
+    <None Remove="my-app\**" />
+    <None Remove="Pictures\**" />
   </ItemGroup>
 
   <ItemGroup>

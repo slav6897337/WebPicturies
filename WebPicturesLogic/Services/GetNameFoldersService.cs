@@ -10,14 +10,14 @@ namespace WebPictures.Logic.Services
 {
     public class GetNameFoldersService : IGetNameFoldersService
     {
-        private readonly string directoryName = "ClientApp/src/Component/img/Pictures";
+        private readonly string directoryName = "ClientApp/public/Pictures";
         public string GetNameFolders()
         {
             var category = Directory.EnumerateDirectories(directoryName);
             List<string> newCategory = new List<string>();
             foreach (var item in category)
             {
-                newCategory.Add( item.Replace("ClientApp/src/Component/img/Pictures\\", ""));
+                newCategory.Add( item.Replace("ClientApp/public/Pictures\\", ""));
             }
             string result = JsonConvert.SerializeObject(newCategory);
             return result;
@@ -28,7 +28,7 @@ namespace WebPictures.Logic.Services
             string adres = directoryName + "/" + category;
             var pictures = Directory.GetFiles(adres);
             Random rnd = new Random();
-            int count = rnd.Next(0, pictures.Length);
+            int count = rnd.Next(1, pictures.Length);
 
             if (count < pictures.Length)
             {                
@@ -36,7 +36,7 @@ namespace WebPictures.Logic.Services
                 while (count > 0)
                 {
                     int num = rnd.Next(0, pictures.Length - 1);
-                    var picture = pictures.Skip(num).First();
+                    var picture = pictures.Skip(num).First().Replace("ClientApp/public/", "");
 
                     if (!pictersLess.Contains(picture))
                     {

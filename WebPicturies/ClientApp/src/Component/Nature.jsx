@@ -1,15 +1,17 @@
 import React from "react";
+import { DisplayPicture } from './DisplayPicture';
 
 export class Nature extends React.Component {
 
   static displayName = Nature.name;
   
   render() {
-   
+
     return (
-      <div className="Nature">
-        <h1>Nature</h1>
+      <div>
+        <DisplayPicture name="Nature"></DisplayPicture>
       </div>
     );
   }
 }
+
